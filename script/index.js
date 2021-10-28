@@ -34,8 +34,6 @@ function sliderInit() {
       $card.offsetLeft - $cardContainer.offsetLeft - $cardContainer.scrollLeft,
       0
     );
-    console.log($card.offsetLeft);
-    console.log($cardContainer.offsetLeft);
 
     $dot.classList.add('selected-dot');
   }
