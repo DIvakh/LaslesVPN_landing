@@ -249,7 +249,6 @@ h4 {
 
 .pricing {
   background-color: #fcfcfc;
-  padding-bottom: 150px;
 }
 
 .tariff-plan--heading,
@@ -383,6 +382,7 @@ h4 {
 /* ========== FEEDBACKS ==========  */
 .feedbacks {
   background-color: #fcfcfc;
+  padding-bottom: 65px;
 }
 .feedbacks-text {
   text-align: center;
@@ -403,28 +403,29 @@ h4 {
 
 .feedbacks-slide-container {
   display: flex;
-  margin-top: 60px;
+  padding-top: 60px;
   justify-content: space-between;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .feedbacks-card {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  min-width: 400px;
   height: 230px;
   border: 2px solid #dddddd;
   border-radius: 10px;
   background-color: white;
   margin-bottom: 60px;
 }
-.feedbacks-card--container {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
+
 .feedbacks-card--header {
   display: flex;
   justify-content: space-between;
 }
 .feedbacks-card:not(:nth-child(3)) {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 .feedbacks-card--user {
   display: flex;
@@ -453,8 +454,77 @@ h4 {
 }
 .feedbacks-card--text {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .feedbacks--header--rating {
   align-self: flex-start;
+}
+
+.feedbacks-slide--buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  border-radius: 50px;
+  background-color: #dde0e4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.arrow-buttons .btn {
+  background-color: #fff;
+  color: #f53838;
+  border: 2px solid #f53838;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.arrow-buttons .btn:hover {
+  color: white;
+  background-color: #f53838;
+}
+.selected-card {
+  border-color: #f53838;
+  box-shadow: 0px 35px 37px -20px rgba(34, 60, 80, 0.2),
+    0px -15px 37px -23px rgba(34, 60, 80, 0.2);
+}
+.selected-dot {
+  background-color: #f53838;
+}
+
+/* ========== SUBSCRIBE ========== */
+
+.subscribe-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+.subscribe-text {
+  flex-basis: 37%;
+}
+.subscribe-title {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+}
+.subscribe-button {
+  align-self: center;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
