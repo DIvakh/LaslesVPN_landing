@@ -39,6 +39,17 @@ h4 {
   font-weight: 400;
   line-height: 3rem;
 }
+
+/* ==== bcg gradient ==== */
+
+.bcg-wrapper {
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
+}
+
 /* ========== HEADER ========== */
 
 .container {
@@ -179,7 +190,6 @@ h4 {
   border-radius: 10px;
   box-shadow: 0 5px 3px rgb(192 192 192 / 90%),
     0 20px 35px rgb(192 192 192 / 50%);
-  margin-bottom: 95px;
 }
 .users--item {
   width: calc(100% / 3);
@@ -211,6 +221,7 @@ h4 {
 /* ========== FEATURES ========== */
 
 .container--features {
+  padding-top: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,7 +260,7 @@ h4 {
 /* ========== PRICING ========== */
 
 .pricing {
-  background-color: #fcfcfc;
+  padding-top: 80px;
 }
 
 .tariff-plan--heading,
@@ -260,7 +271,6 @@ h4 {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 5rem;
-  padding-top: 80px;
   margin-bottom: 20px;
 }
 .tariff-plan-regular {
@@ -350,8 +360,7 @@ h4 {
 
 /* ========== NETWORK ========== */
 .network {
-  background-color: #fcfcfc;
-  padding-bottom: 50px;
+  margin-bottom: -60px;
 }
 .network-text {
   text-align: center;
@@ -382,7 +391,7 @@ h4 {
 
 /* ========== FEEDBACKS ==========  */
 .feedbacks {
-  background-color: #fcfcfc;
+  padding-top: 120px;
 }
 .feedbacks-text {
   text-align: center;
@@ -424,8 +433,11 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
-.feedbacks-card:not(:nth-child(3)) {
+.feedbacks-card {
   margin-right: 60px;
+}
+.feedbacks-card:last-child {
+  margin-right: 0;
 }
 .feedbacks-card--user {
   display: flex;
