@@ -494,7 +494,7 @@ h4 {
 }
 
 .arrow-buttons .btn {
-  background-color: #fcfcfc;
+  background-color: transparent;
   color: #f53838;
   border: 2px solid #f53838;
   border-radius: 50%;
