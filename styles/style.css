@@ -53,6 +53,7 @@ h4 {
 .header {
   background-color: white;
   position: sticky;
+  z-index: 2;
   top: -1px;
   padding-top: 1px;
   transition: 0.3s ease;
@@ -516,6 +517,7 @@ h4 {
   top: 120px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 0px 63px -20px #0d102531;
 }
 .subscribe-text {
   flex-basis: 40%;
@@ -544,20 +546,69 @@ h4 {
 .footer {
   background-color: #f8f8f8;
   padding-top: 180px;
+  padding-bottom: 100px;
 }
 .footer > .container {
   display: flex;
 }
 .footer-right {
+  width: 570px;
   display: flex;
+  justify-content: space-between;
 }
 .footer-p {
-  margin: 0;
-  font-weight: 500;
+  margin: 0 0 30px 0;
+  width: 50%;
 }
 .footer-logo {
   display: flex;
+  margin-bottom: 20px;
 }
 .footer-logo img {
   margin-right: 10px;
+}
+.footer-list {
+  padding: 0;
+}
+\ .icons {
+  margin-bottom: 30px;
+}
+.icons a {
+  margin-right: 20px;
+  position: relative;
+}
+.icons a img {
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 13px 18px rgb(17 19 35 / 8%);
+}
+.icons a img:hover {
+  outline: 2px solid #f53838;
+}
+.icons a::before {
+  content: '';
+  background-color: #f53838;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 8px;
+  left: 4px;
+}
+.copyright {
+  color: #afb5c0;
+}
+.footer-list-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.footer-li {
+  margin-bottom: 10px;
+}
+.footer-li a {
+  transition: 0.3s;
+}
+.footer-li a:hover {
+  color: #f53838;
 }
